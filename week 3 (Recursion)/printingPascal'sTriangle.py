@@ -3,7 +3,8 @@ def pascal(n):
     This one is interesting too! The aim is to recursively make a pascal triangle (please wikepedia this, it's too long
     to explain simply without a diagram).
     WE ONLY RETURN THE CURRENT REQUESTED ROW!
-    KEEP IN MIND that the outside most numbers on the left and right are ALWAYS 1's.
+    KEEP IN MIND that the outside most numbers on the left and right of the traingle are ALWAYS 1's irregardless of what
+    row you are looking at.
     FOR N = 0 WE RETURN [1] AND FOR N = 1 WE RETURN [1, 1]
     :param n: The total number of rows (remember, we do zero-point indexing).
     :return: A pascal triangle.
