@@ -1,3 +1,5 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Question N/A~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 """
 This is my attempt at writing code for any counting sort method(s).
 
@@ -50,7 +52,7 @@ def countingSort(x):
         countList[number - minimumValue] += 1 # for the index of number - minumumValue we increase it by 1 (because it means we can tally someone got this score)
 
     # step 4
-    for i in range(rangeSize):
+    for i in range(1, rangeSize):
         countList[i] += countList[i - 1]
 
     # step 5
@@ -60,5 +62,7 @@ def countingSort(x):
 
     return outputList
 
+# test code to make sure my stuff works :P
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Question N/A~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 scores = [4, 2, 2, 8, 3, 3, 1]
 print(countingSort(scores))
