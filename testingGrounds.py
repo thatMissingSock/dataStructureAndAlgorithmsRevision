@@ -1,6 +1,5 @@
-x = ["(", "2", "+", "2", ")"]
-# print(check_brackets(x), "should be", True)
+tempList = []
 
-print(x)
-x.split()
-print(x)
+for i in range(3):
+    tempList.append([])
+print(tempList)
