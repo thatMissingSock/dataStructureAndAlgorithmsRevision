@@ -51,33 +51,3 @@ def join_BT(left, right, v):
     root.left_child = left
     root.right_child = right
     return root
-
-    def putInList(root):
-        """
-        Converts all values of the root and its descendants into a single list.
-        I created a new function just because it seemed easier than to cram it all into one function.
-        :param root: A tree.
-        :return: A flat list containing all the values of the root and its descendants.
-        """
-        if root is None:
-            return []
-
-        tempList = [root.value]  # Start with the current node's value
-
-        # Add all values from the children recursively
-        for child in root.children:
-            tempList.extend(putInList(child))  # Extend instead of append as we are adding 2 lists together
-
-    return tempList
-
-
-def test_max_T():
-  B = Tree(5)
-  C = Tree(3)
-  D = Tree(6)
-  E = join_T([C, D], 1)
-  A = join_T([B, E], 2)
-  print(A)
-  print(putInList(A))
-
-test_max_T()
