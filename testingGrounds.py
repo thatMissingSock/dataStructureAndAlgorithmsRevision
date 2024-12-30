@@ -52,7 +52,7 @@ def join_BT(left, right, v):
     root.right_child = right
     return root
 
-    def putInList(root):
+def putInList(root):
         """
         Converts all values of the root and its descendants into a single list.
         I created a new function just because it seemed easier than to cram it all into one function.
@@ -66,9 +66,9 @@ def join_BT(left, right, v):
 
         # Add all values from the children recursively
         for child in root.children:
-            tempList.extend(putInList(child))  # Extend instead of append as we are adding 2 lists together
+            tempList.append(putInList(child))
 
-    return tempList
+        return tempList
 
 
 def test_max_T():
